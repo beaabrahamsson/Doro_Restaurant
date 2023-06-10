@@ -1,0 +1,23 @@
+/*
+ * @Author: Beatrice Abrahamsson
+ * @Email: beaabrahamsson6@gmail.com
+ * @Date: 2022-05-25 14:56:52
+ * @Last Modified by: Beatrice Abrahamsson
+ * @Last Modified time: 2022-05-25 15:15:49
+ * @Description: Description
+ */
+
+ //Mixin with media query for phone
+@mixin for-phone {
+    @media only screen and (max-width: 768px) { @content; }
+  }
+
+//Mixin with media query for tablet
+@mixin for-tablet {
+    @media only screen and (min-width: 768px) and (max-width: 992px) { @content; }
+  }
+
+ //Mixin with media query for desktop
+@mixin for-desktop {
+    @media only screen and (min-width: 992px) { @content; }
+}

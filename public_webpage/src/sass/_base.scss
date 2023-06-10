@@ -1,0 +1,36 @@
+/*
+ * @Author: Beatrice Abrahamsson
+ * @Email: beaabrahamsson6@gmail.com
+ * @Date: 2022-05-25 14:56:26
+ * @Last Modified by: Beatrice Abrahamsson
+ * @Last Modified time: 2022-05-26 09:37:06
+ * @Description: Description
+ */
+//contains all the resets, variables, mixins, and utility classes
+
+//Variables
+$primary-font: 'Playfair Display', serif;
+$secondary-font: 'Montserrat', sans-serif;
+$primary-color: #000000;
+$secondary-color: #D4AF37;
+$tertiary-color: #730000;
+$background-image: "../images/background.jpg"; 
+$opacity-background: rgb(0, 0, 0, 0.5);
+
+//Mixins
+@mixin buttons {
+    font-family: $secondary-font;
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+        color: $primary-color;
+    }
+}

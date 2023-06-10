@@ -1,0 +1,38 @@
+{
+  "name": "projekt_publikwebbplats_vt22-beaabrahamsson",
+  "version": "1.0.0",
+  "description": "Projekt Webb III",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webbutvecklings-programmet/projekt_publikwebbplats_vt22-beaabrahamsson.git"
+  },
+  "keywords": [],
+  "author": "Beatrice Abrahamsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webbutvecklings-programmet/projekt_publikwebbplats_vt22-beaabrahamsson/issues"
+  },
+  "homepage": "https://github.com/Webbutvecklings-programmet/projekt_publikwebbplats_vt22-beaabrahamsson#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "node-sass": "^7.0.1",
+    "typescript": "^4.6.4"
+  }
+}

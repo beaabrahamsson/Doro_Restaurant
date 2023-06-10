@@ -1,0 +1,87 @@
+/*
+ * @Author: Beatrice Abrahamsson
+ * @Email: beaabrahamsson6@gmail.com
+ * @Date: 2022-05-25 14:56:46
+ * @Last Modified by: Beatrice Abrahamsson
+ * @Last Modified time: 2022-05-25 20:32:00
+ * @Description: Description
+ */
+
+ //all the Sass code handling the layout, which is the container and grid systems
+
+
+//Body
+body {
+    background-image: url($background-image);
+    background-size: cover;
+    margin: 0;
+
+    @include for-phone {
+        overflow-x: hidden;
+    }
+
+    @include for-tablet {
+        overflow-x: hidden;
+    }
+
+}
+
+//Main
+main {
+    margin-top: 150px;
+
+    @include for-phone {
+        margin-top: 100px;
+    }
+
+    @include for-tablet {
+        margin-top: 100px;
+    }
+}
+
+//Footer
+footer {
+    font-family: $secondary-font;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+
+    @include for-phone {    
+        flex-wrap: wrap;
+        margin-top: 100px;
+     }
+
+     @include for-tablet {    
+        flex-wrap: wrap;
+        margin-top: 100px;
+     }
+
+
+    .footer-container {
+        margin: auto;
+    }
+
+    h3 {
+        color: $secondary-color;
+        text-align: center;
+    }
+
+    li {
+        color: white;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,418 @@
+/*
+ * @Author: Beatrice Abrahamsson
+ * @Email: beaabrahamsson6@gmail.com
+ * @Date: 2022-05-25 14:56:40
+ * @Last Modified by: Beatrice Abrahamsson
+ * @Last Modified time: 2022-05-26 09:36:57
+ * @Description: Description
+ */
+
+ //everything that is reusable – buttons, navbars, cards, and so on
+
+//Navbar
+.navbar {
+    font-family: $secondary-font;
+    background-color: $primary-color;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .nav-link {
+        color: $secondary-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin-right: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include for-phone {
+        display: none;
+    }
+
+    @include for-tablet {
+        display: none;
+    }
+}
+
+//Mobile menu
+.mobile-nav {
+    overflow: hidden;
+    background-color: $primary-color;
+    position: relative;
+
+    .logo {
+        width: 60%;
+        height: auto;
+        margin: 0px;
+
+        @include for-phone {
+            width: 80%;
+        }
+    
+        @include for-tablet {
+            width: 65%;
+        }
+    }
+
+    #links {
+        display: none;
+    }
+
+    a {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: black;
+        }
+
+        &.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            &:hover {
+                color: $secondary-color; opacity: 0.5;
+            }
+        }
+    }
+
+    @include for-desktop {
+        display: none;
+    }
+
+}
+
+//Logo
+.logo {
+    img {
+        width: 50%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    a {
+        padding: 0px;
+        margin: 0px;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}
+
+//Buttons
+.button {
+    @include buttons 
+
+}
+
+//Titles
+.title {
+    color: $secondary-color;
+    font-size: 100px;
+    text-align: center;
+
+    @include for-phone {    
+        font-size: 70px;
+     }
+
+}
+
+
+.main-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: auto;
+
+    @include for-phone {
+        width: 50%;
+    }
+
+    @include for-tablet {
+        width: 30%;
+    }
+
+    a {
+        margin-bottom: 10px;
+    }
+}
+
+//Container
+.index-container {
+    background-color: $opacity-background;
+    width: 50%;
+    margin: auto;
+    color: $secondary-color;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: larger;
+
+    @include for-phone {
+        width: 80%;
+    }
+
+    @include for-tablet {
+        width: 70%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+//Social media icons
+.fa {
+    padding: 10px;
+    font-size: 1px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: $secondary-color;
+    color: white;
+    border-radius: 5%;
+    margin: 5px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+  }
+
+  .fa-li {
+    color: $secondary-color;
+  }
+
+  .fa-brands {
+      color: $secondary-color;
+      margin-left: 10px;
+
+      &:hover {
+        opacity: 0.7;
+    }
+  }
+//Menu
+  .menu {
+    background-color: $opacity-background;
+    width: 50%;
+    margin: auto;
+    color: $secondary-color;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: larger;
+    text-align: center;
+
+    @include for-phone {    
+        width: 80%;
+     }
+
+     @include for-tablet {    
+        width: 70%;
+     }
+
+
+    .menu-container {
+
+        ul {
+            color: white;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .name {
+                text-transform: uppercase;
+            }
+
+            .desc {
+
+                &:first-letter {
+                    text-transform: capitalize;
+                }
+                
+            }
+        }
+    }
+  }
+
+//Forms
+  .form-container {
+    background-color: $opacity-background;
+    width: 50%;
+    margin: auto;
+    color: $secondary-color;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: larger;
+
+    @include for-phone {    
+        width: 80%;
+     }
+
+     @include for-tablet {    
+        width: 70%;
+     }
+
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #form-name {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        gap: 50px;
+
+        @include for-phone {    
+            flex-wrap: wrap;
+            gap: 0px;
+         }
+
+         @include for-tablet {    
+            flex-wrap: wrap;
+         }
+    }
+
+    #form-contact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        box-sizing: border-box;
+
+        @include for-phone {    
+            flex-wrap: wrap;
+            gap: 0px;
+         }
+
+         @include for-tablet {    
+            flex-wrap: wrap;
+         }
+    }
+
+    #form-details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        box-sizing: border-box;
+
+        @include for-phone {    
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 0px;
+         }
+
+         @include for-tablet {    
+            flex-wrap: wrap;
+            flex-direction: column;
+         }
+
+        input {
+            width: 120px;
+            margin-right: 10px;
+        }
+
+        select {
+            width: 120px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            margin-right: 10px;
+        }
+    }
+  }
+
+  .about-container {
+    background-color: $opacity-background;
+    width: 50%;
+    margin: auto;
+    color: $secondary-color;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: larger;
+
+    @include for-phone {    
+        width: 80%;
+     }
+
+     @include for-tablet {    
+        width: 70%;
+     }
+
+    #about-content {
+        width: 80%;
+        margin: auto;
+
+        @include for-phone {    
+            width: 90%;
+         }
+    
+         @include for-tablet {    
+            width: 90%;
+         }
+    }
+
+    h2 {
+        text-align: center;
+    }
+  }
+
+//Styling error messages
+.error {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: larger;
+  }
+
+//Styling messages
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: $secondary-color;
+    font-size: larger;
+  }
+

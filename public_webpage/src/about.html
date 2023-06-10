@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a4edee1373.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>D'oro</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <!-- Navigation menu -->
+        <div class="navbar">
+            <div class="logo"><a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a></div>
+            <div class="nav-links">
+                <a class="nav-link" href="menu.html">MENY</a>
+                <a class="nav-link" href="about.html">OM OSS</a>
+                <a class="nav-link" href="contact.html">KONTAKT</a>
+                <a class="nav-link" href="review.html">LÄMNA OMDÖME</a>
+            </div>
+            <a class="button" href="booking.html">BOKA BORD</a>
+        </div>
+            <!-- Mobile menu -->
+        <div class="mobile-nav">
+            <div class="logo"><a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a></div>
+            <!-- Navigation links (hidden by default) -->
+            <div id="links">
+            <a href="booking.html">Boka bord</a>
+            <a href="menu.html">Meny</a>
+            <a href="about.html">Om oss</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="review.html">Lämna omdöme</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="about-container">
+            <div id="about-content">
+                <h2>Om oss</h2> 
+                <p>D’ORO betyder gyllene på italienska och vårt mål är att sätta guldkant på vardagen för våra gäster.</p>
+                <p>På D’ORO hittar du den den finaste av klassisk italiensk mat där menyn anpassas efter säsongens råvaror. Därför kan menyn se annorlunda ut från en månad till en annan.</p>
+                <p>På D'ORO serverar vi klassisk italiensk antipasti, secondi, dolci och handgjord pasta.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <h3>ÖPPETTIDER</h3>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-calendar"></i></span>Måndag-Söndag</li>
+                <li><span class="fa-li"><i class="fas fa-clock"></i></span>17.00-23.00</li>
+              </ul>
+        </div>
+        <div class="footer-container">
+            <h3>KONTAKT</h3>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-phone"></i></span>010-12 34 56</li>
+                <li><span class="fa-li"><i class="fas fa-envelope"></i></span><a href="mailto:kontakt@doro.se">kontakt@doro.se</a></li>
+              </ul>
+        </div>
+        <div class="footer-container">
+            <h3>HITTA HIT</h3>
+            <ul class="fa-ul">
+                <li>Restauranggatan 12</li>
+                <li>123 45 Uppsala</li>
+                <li><a href="https://goo.gl/maps/2SBNUyWoap2AgcT97"><span class="fa-li"><i class="fas fa-location-dot"></i></span>Karta</a></li>
+              </ul>
+        </div>
+        <div class="footer-container">
+            <h3>SOCIALA MEDIER</h3>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-facebook-square fa-3x"></i></a>
+                <a href=""><i class="fa-brands fa-instagram-square fa-3x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
